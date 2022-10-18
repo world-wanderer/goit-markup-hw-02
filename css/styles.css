@@ -1,0 +1,163 @@
+/* основной цвет #212121
+дополнительный цвет #757575
+вторичный цвет #FFFFFF 
+дополнительный вторичный #2196F3*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
+
+:root {   
+    --text-color: #757575;    
+    --accent-color: #2196F3;
+    --bg-primary-color: #2F303A;
+    --bg-second-color: #EEEEEE;
+    --second-font-family: "Raleway", sans-serif;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    color: #212121;
+    letter-spacing: 0.03em;
+    font-size: 16px;
+}
+.list {
+    list-style: none;
+}
+/* Шапка */
+.logo {
+    font-family: var(--second-font-family);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: #000;    
+}
+.logo > span {
+    color: var(--accent-color);
+}
+.span:hover {
+    color: #000;
+}
+.logo:hover {
+    color: var(--accent-color);
+}
+.nav-site .link {    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.nav-site .link.current {
+    color: var(--accent-color);
+}
+.nav-site .link:hover,
+.nav-site .link:focus {
+    color: var(--accent-color);
+}
+.authoriz .link {
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.authoriz .link:hover,
+.authoriz .link:focus {
+    color: var(--accent-color);
+}
+/* Банер */
+.banner {
+    background-color: var(--bg-primary-color);
+}
+.banner-title {
+    color: #fff;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.banner-btn {
+    color: #fff;
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+/* Головний контент */
+
+.features .sub-title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+.work > .sub-title,
+.team > .sub-title {    
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+.team-title {
+    font-weight: 500;    
+    line-height: 1.19;
+    text-align: center;
+}
+.features-text,
+.team-text {
+    color: var(--text-color);
+}
+.features-text {
+    font-size: 14px;
+    line-height: 1.71;
+}
+.team-text {    
+    line-height: 1.19;
+    text-align: center;
+}
+/* Підвал */
+
+.footer {
+    background-color: var(--bg-primary-color);
+}
+.footer .logo {
+    color: #fff;
+}
+.footer .logo:hover {
+    color: var(--accent-color);
+}
+.footer .span {
+    color: var(--accent-color);
+}
+.footer .span:hover {
+    color: #fff;
+}
+.adress {
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.71;
+}
+.footer .link {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+/* Портфоліо */
+
+.filters-link {   
+    font-weight: 500;    
+    line-height: 1.625;
+    text-align: center;
+    cursor: pointer;
+}
+.filters-link:hover,
+.filters-link:focus {
+    color: #fff;
+    background-color: var(--accent-color);
+}
+.project-title {    
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.project-text {
+    color: var(--text-color);   
+    line-height: 1.875;     
+}
